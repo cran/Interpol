@@ -1,0 +1,10 @@
+fb00dadc44be4873193ef19198a3c3fe *DESCRIPTION
+9fdfeb11f7ddba6f3aab9aaa6b1ac5dd *NAMESPACE
+cfd065b1b6e9444c11bb46b6d22e9b54 *R/AAdescriptor.R
+9860ee3c3440d7d886473d69102b80cf *R/Interpol.R
+3103cec20409a3450cf13c5de43d2033 *data/AAindex.rda
+c483a7cde660ba5993921bdb752ab1bf *data/V3.rda
+31b82fe4b9a01ee30886805605602e8a *man/AAdescriptor.Rd
+43984e189dde52f9314bea8478402206 *man/AAindex.Rd
+35acc77c7e213d35e8de50bbf7eab735 *man/Interpol.Rd
+e7862e10eae55830bf3114f61097f478 *man/V3.Rd

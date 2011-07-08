@@ -5,7 +5,7 @@
 Interpolation of encoded amino acid sequences
 }
 \description{
-Interpolation of encoded amino acid sequences to a specific length. Interpol can be used to transform protein sequences to uniform length for subsequent classification.
+Interpolation of encoded protein sequences to a specific length. Interpol can be used to transform protein sequences to uniform length for subsequent classification.
 }
 \usage{
 Interpol(data, dims, method = "linear")
@@ -13,7 +13,7 @@ Interpol(data, dims, method = "linear")
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{data}{
-	encoded amino acid sequence (as numerical vector)
+	list of encoded protein sequences (as numerical vectors)
 }
   \item{dims}{
 	interpolation value (desired dimensionality)
@@ -28,16 +28,18 @@ Interpol(data, dims, method = "linear")
 	"periodic": fulfills periodic boundary conditions
 
 	"fmm": interpolation of Forsythe
+	
+	"average": interval based averaging
 }
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 }
 \value{
- returns the interpolated encoded amino acid sequence with desired dimensionality.
+ returns the interpolated encoded amino acid sequences with desired dimensionality.
 }
 \references{
-Dybowski J.N., Heider D., Hoffmann D. PLoS Computational Biology 2010, 6(4): e1000743.
+Heider D., Verheyen J., Hoffmann D.: Machine learning on normalized protein sequences, BMC Research Notes 2011, 4:94.
 }
 \author{
 	Dominik Heider, PhD, University of Duisburg-Essen, Germany
@@ -66,8 +68,8 @@ Dybowski J.N., Heider D., Hoffmann D. PLoS Computational Biology 2010, 6(4): e10
 	c
 
 	#### plotting
-	plot(b, type="l", col="darkgreen", ylim=c(-3,3), ylab="descriptor value", xlab="sequence position", lwd=2)
-	lines(seq(1,length(b),(length(b)/length(c))),c, col="red", lwd=2)
+	plot(unlist(b), type="l", col="darkgreen", ylim=c(-3,3), ylab="descriptor value", xlab="sequence position", lwd=2)
+	lines(seq(1,length(unlist(b)),(length(unlist(b))/length(as.vector(c)))),as.vector(c), col="red", lwd=2)
 	axis(3, at=seq(1,35, 35/27), labels=1:27)
 
 }

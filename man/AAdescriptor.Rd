@@ -13,7 +13,7 @@ AAdescriptor(data, descriptor = 151, normalize = 0)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{data}{
-	amino acid sequence (as characters)
+	vector of protein sequences (as characters)
 }
   \item{descriptor}{
 	descriptor to be used (range 1-532)
@@ -26,7 +26,7 @@ AAdescriptor(data, descriptor = 151, normalize = 0)
 %%  ~~ If necessary, more details than the description above ~~
 }
 \value{
- returns the encoded (and normalized) amino acid sequence.
+ returns the encoded (and normalized) amino acid sequences.
 }
 \references{
 	Heider D., Hauke S., Pyka M., Kessler D. Advances and Applications in Bioinformatics and Chemistry 2010, 3:15-24
@@ -47,7 +47,7 @@ AAdescriptor(data, descriptor = 151, normalize = 0)
 }
 \examples{
 	#### Amino acid sequence
-	a = "MEGHIK"
+	a = c("MEGHIK", "MILIK")
 
 	#### encoding of sequence a with descriptor 151 and without normalization
 	b = AAdescriptor(a, 151, 0)

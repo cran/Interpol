@@ -1,13 +1,13 @@
-\name{list}
-\alias{list}
+\name{AAindex}
+\alias{AAindex}
 \docType{data}
 \title{
 AAindex database
 }
 \description{
-The modified AAindex database with 532 descriptors for the twenty amino acids.
+The modified AAindex database with 533 descriptors for the twenty amino acids.
 }
-\usage{data(list)}
+\usage{data(AAindex)}
 \format{
 }
 \details{
@@ -1074,6 +1074,8 @@ The modified AAindex database with 532 descriptors for the twenty amino acids.
 531	Hydrophobicity_index_(Fasman,_1989)
 
 532	GA_APV_OUT_(Heider,_Nov_2010)
+
+533	GAD_(Heider_et_al.,_2011)
 }
 \source{
 }
